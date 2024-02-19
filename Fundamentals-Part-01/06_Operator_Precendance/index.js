@@ -6,5 +6,5 @@ console.log(x, y);
 
 let num1 = 10;
 let num2 = 20;
-//Assignment Operator precendance (left to right)
+//Assignment Operator precendance (right to left)
 console.log((num1 + num2) / 2);
