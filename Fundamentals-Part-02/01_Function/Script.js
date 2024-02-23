@@ -12,7 +12,6 @@ logger();
 //Another Function which returns some value.
 function fruitProcessor(apples, oranges) {
   const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-
   return juice;
 }
 
