@@ -1,0 +1,197 @@
+REACT JS 
+
+1.React js is a javascript library ,which helps to create single page application.
+2.React js was introduced by facebook on 2013 by JORDEN WALKEE.
+
+Q)iimp question difference between REAL DOM AND VIRTUAL DOM
+VIRTUAL DOM
+1.NO MEMORY WASTAGE.
+2.FAST UPDATES.
+3.DOM MANIPULALTION IS CHEAP.
+4.CANT DIRECLTY TARGET HTML.
+
+REAL DOM
+1.MORE MEMORY WASTAGE.
+2.SLOW UPDATES.
+3.DOM MANIPULATION IS expensive. 
+4.WE CAN DIRECTLY TARGET HTML.
+
+Q)DIFFERENCE BETWEEN ANGULAR JS AND REACT JS 
+
+REACT JS
+1.REACT JS BELONG S TO FACEBOOK
+2.WE ARE USING JAVASCRIPT
+3.REACT JS IS UNIDIRECTIONAL OR ONE WAY BINDING 
+4.REACTJS IS LIBRARY
+5.IN REACTJS THEY ARE USING VIRTUAL DOM
+
+
+
+ANGULAR JS
+1.ANGULAR JS BELONGS TO GOOGLE
+2.TYPE SCRIPT
+3.IT IS BIDIRECTIONAL OR TWO WAY BINDING.
+4.ANGULLAR JS IS FRAMEWORK
+5.IN ANGULAR JS THEY ARE USING REAL DOM
+
+to install react (code for terminal of vs code) first install node js and check installed onn cmd 
+==>
+npm create vite@latest
+cd react13.0
+npm install
+npm run dev
+
+
+
+
+*********************09/10/2023******************************************
+
+Babel==>Babel  is a free and opensource javasript transCompiler . that is mainly  used to convert ecmascript 2015 code into  backwards compatible javascript code , that can be run , by older javascript engines.
+
+Q)Difference between jsx and without jsx ?
+==> 
+WITH JSX==>
+
+function App(){
+return(
+	<div>
+		<h1>Hello</h1>
+	</div>
+	)
+}
+
+
+
+
+WITHOUT JSX==>
+function App(){
+return(
+	React.createElement(div.{},<h1>Hello</h1>)
+	)
+}
+
+
+**************************************************************************************************************
+16/10/2023
+
+1.componnents are liks js function
+2.every componenet must start with uppercase because react treats the componenets as DOM elements.
+3.Components are reusable .
+
+
+functional component
+1.Easy
+2.Js function
+3.Hooks are present
+4.absent
+5.absent
+
+class component
+1.Difficult
+2.js oops
+3.absent
+4.lifecycle method is present
+5.Scope,member,constructor,this present
+
+*****************PROPS**************
+1.props is like a property passing from parent component to child component
+2.passing as like a functional argument 
+3.props is read only
+
+
+*********************************************************************************************************************
+17/10/2023
+
+props
+1.read only.
+2.passing from parent to child.
+
+
+state
+1.we can modify.
+2.writting in same component.
+
+HOOKS
+1.HOOKS are the feature introduced in react 16.8 version.
+2.Before react hooks we are unable to use state and lifecycle method inn functional components adn that is the reason functional components were called stateless.
+
+Rules to foollow while using hoooks
+1.Hooks should always be called at top level.
+2.we can only call hooks from functional component
+
+Hooks
+1.use state ==>
+	1.It allows you to add state to the functional component
+	2.use state which helps to track and manipulate the state.
+	eg:
+		const[count,setCount]=useState(0)
+
+		return(
+			<button onClick{()=>setCount(count+1)}>+</button>
+			
+		)
+2.use effect
+	1.useEffect is a sideEffect for the use state.
+	2.common use cases for user 
+		1.data fetching
+		2.DOM manipulation 
+		3.Timers and intervals
+		4.addEventListener
+
+	1.if the dedpendancy array is empty the effect will run onlu once ,after the initial render .
+	2. if the dependancy array is not provided the effect will run after the every render of the component.
+	3.if the dependancy array contains a variable the effect will only be re-executed when any of those variable changes
+
+3.use layout effect==>
+	1.use LayoutEffect is a version of use Effect 
+	2.files that executes before the browser refresh the page
+	3.
+4.use memo==>
+	1.useMemo returns memoized value.
+	2.The useMemo Hook only runs when one of its dependancies updated.
+	3.This can improve performance.
+
+Q]Difference between useMemo and useCallBack
+==>
+
+5.use call back==>
+	1the react use callBack hook returns a memorised callBack function.
+	2.The use caaBack hook only runs when one of its dependancies updated.
+	3.This can improve performance.
+
+6.use ref==>
+	1.useRef which helps to target reference object and which helps to target dom elements by the help of .current property.
+7.use content
+8.use id
+9.use param  
+10.use navigate       
+
+
+*************************************************************************
+20/10/2023
+
+for React+vite==>
+LOcalhost:5173
+
+for React==>
+LOcalhost:3000
+***************************************************************
+27/10/2023
+memoization==>which helps to optimeze expensive calculation.
+
+
+Q] why useEffect is renedaring two times?
+
+
+
+
+adx 20 less consolidate
+dmi directional momentum index
+emi 50 10 
+
+
+useContext==>
+1.context provide a way to share data between componenets without having props .
+2.useContext manages states globally
+3.it can be used together with the useState .
+4.we are passing data from parent component to nested child component , this is called "props drilling".
